@@ -22,7 +22,7 @@ jobs:
           pip install bs4
           pip install requests
       - name: 'Get DataSource'
-        run: curl https://news.topurl.cn > ./result.html
+        run: curl https://news.topurl.cn > ./index.html
       - name: 'Get Info'
         run: python ./getInfo.py
       - name: 'Get Date'
